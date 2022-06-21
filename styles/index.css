@@ -87,6 +87,13 @@ a {
     text-decoration: none;
 }
 
+.card__icon:hover {
+    background-color: #16133D;
+    border: 1px solid #E5EAF4;
+    border-radius: 12px;
+    transition: .6s;
+}
+
 footer {
     box-sizing: border-box;
     padding-left: 135px;
@@ -110,5 +117,8 @@ footer {
     height: 38px;
     padding: 0px;
     padding-top: 40px;
+}
 
+.footer__socials:hover {
+   stroke: #aa1888;
 }
