@@ -171,6 +171,11 @@ h2 {
     background-position: 18px 13px;
 }
 
+a {
+    color: #3DB370;
+    text-decoration: none;
+}
+
 footer {
     box-sizing: border-box;
     padding-left: 135px;
