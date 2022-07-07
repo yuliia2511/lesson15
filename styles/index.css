@@ -66,32 +66,109 @@ h2 {
 }
 
 .card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 370px;
+    height: 340px;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+
+}
+
+.card__inner {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px;
-    width: 370px;
-    height: 340px;
-    background: #FFFFFF;
-    border: 1px solid #E5EAF4;
+    padding: 0px;
+    gap: 12px;
+    width: 290px;
+    height: 335px;
+    padding-left: 30px;
+}
+
+.card__icon_1,
+.card__icon_2,
+.card__icon_3 {
+    width: 64px;
+    height: 64px;
+    box-sizing: border-box;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.izo {
+    margin: auto;
+    width: 38.75px;
+    height: 36px;
+}
+
+.pic {
+    margin: auto;
+    width: 38.49px;
+    height: 36px;
+}
+
+.icon {
+    margin: auto;
+    width: 24.05px;
+    height: 36px;
+}
+
+.card:hover {
+    border: 1px solid rgba(61, 179, 112, 1);
     border-radius: 8px;
 }
 
-#card-green {
-    border: 1px solid #3DB370;
+.card__icon_1:hover img {
+    opacity: 0;
 }
 
-a {
-    color: #3DB370;
-    text-decoration: none;
+.card__icon_2:hover img {
+    opacity: 0;
 }
 
-.card__icon:hover {
-    background-color: #16133D;
-    border: 1px solid #E5EAF4;
-    border-radius: 12px;
-    transition: .6s;
+.card__icon_3:hover img {
+    opacity: 0;
+}
+
+.card__icon_2:hover {
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(61, 179, 112, 1);
+    border-radius: 16px;
+    background: url('img-flip-icon/building-green.svg');
+    background-repeat: no-repeat;
+    background-position: 12px 13px;
+}
+
+.card__icon_1:hover {
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(61, 179, 112, 1);
+    border-radius: 16px;
+    background: url("img-flip-icon/megaphone-green.svg");
+    background-repeat: no-repeat;
+    background-position: 12px 13px;
+}
+
+.card__icon_3:hover {
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(61, 179, 112, 1);
+    border-radius: 16px;
+    background: url("img-flip-icon/phone-green.svg");
+    background-repeat: no-repeat;
+    background-position: 18px 13px;
 }
 
 footer {
@@ -119,6 +196,3 @@ footer {
     padding-top: 40px;
 }
 
-.footer__socials:hover {
-   stroke: #aa1888;
-}
